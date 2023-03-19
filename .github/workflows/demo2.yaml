@@ -16,3 +16,7 @@ jobs:
       - run: ping -c 1 www.google.com || true
       - run: cat /mnt/DATALOSS_WARNING_README.txt
       - run: whoami
+
+      - name: Setup tmate session
+        if: success() || failure()
+        uses: mxschmitt/action-tmate@v3
