@@ -11,6 +11,6 @@ jobs:
       - run: uptime
       - run: ip addr
       - run: free -h
-      - run: ping -c 1 www.google.com
+      - run: ping -c 1 www.google.com || true
       - run: cat /mnt/DATALOSS_WARNING_README.txt
       - run: whoami
