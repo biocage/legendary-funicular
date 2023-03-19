@@ -7,9 +7,10 @@ jobs:
     steps:
       - run: uname -a
       - run: df -h
-      - run: ls -la /*
+      - run: ls -la /* || true
       - run: uptime
       - run: ip addr
       - run: free -h
       - run: ping -c 1 www.google.com
-      
+      - run: cat /mnt/DATALOSS_WARNING_README.txt
+      - run: whoami
