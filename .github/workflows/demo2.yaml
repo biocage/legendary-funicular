@@ -1,0 +1,15 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: uname -a
+      - run: df -h
+      - run: ls -la /*
+      - run: uptime
+      - run: ip addr
+      - run: free -h
+      - run: ping -c 1 www.google.com
+      
